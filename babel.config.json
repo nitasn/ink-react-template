@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }]
+  ],
+  "plugins": [
+    ["transform-rename-import", {
+      "replacements": [{ "original": "^(\\..+)$", "replacement": "$1.mjs" }]
+    }]
+  ]
+}
