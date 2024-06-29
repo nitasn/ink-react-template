@@ -1,4 +1,4 @@
-import { Box, Text, useApp, useInput } from "ink";
+import { Box, Text, Newline, useApp, useInput } from "ink";
 import { useState } from "react";
 
 export default function App() {
@@ -20,8 +20,7 @@ export default function App() {
         Count: <Text color="green">{count}</Text>
       </Text>
 
-      {/* an empty line */}
-      <Text children=" " />
+      <Newline />
 
       <Text>Press [Enter] to increment.</Text>
       <Text>Press [Q] to quit.</Text>
