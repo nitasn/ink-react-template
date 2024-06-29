@@ -1,5 +1,5 @@
+import { Box, Text, useApp, useInput } from "ink";
 import { useState } from "react";
-import { Text, useInput, useApp, Box } from "ink";
 
 export default function App() {
   const [count, setCount] = useState(0);
