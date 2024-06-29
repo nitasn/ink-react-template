@@ -8,10 +8,8 @@ export default function App() {
 
   useInput((input, key) => {
     if (input.toLowerCase() === "q") {
-      return exit();
-    }
-
-    if (key.return) {
+      exit();
+    } else if (key.return) {
       setCount((c) => c + 1);
     }
   });
