@@ -8,7 +8,7 @@ export default function Counter() {
 
   useInput((input, key) => {
     if (input.toLowerCase() === "q") {
-      exit();
+      return exit();
     }
 
     if (key.return) {
@@ -16,14 +16,15 @@ export default function Counter() {
     }
   });
 
-  const emptyLine = <Text children=" " />;
-
   return (
     <Box flexDirection="column" alignSelf="flex-start" borderStyle="round" paddingX={2} paddingY={1}>
       <Text>
         Counter: <Text color="green">{counter}</Text>
       </Text>
-      {emptyLine}
+
+      {/* an empty line */}
+      <Text children=" " />
+
       <Text>Press [Enter] to increment.</Text>
       <Text>Press [Q] to quit.</Text>
     </Box>
