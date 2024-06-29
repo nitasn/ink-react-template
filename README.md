@@ -11,4 +11,4 @@ This repo mainly contains a `babel.config` that transpiles react `.jsx` files in
 
 This will watch your `src` folder via nodemon, and re-run it on changes.
 
-Alternatively, to run your code normally, do `npm run build && node dist/index.mjs`.
+Alternatively, to run your code normally, do `npm run build && node build/index.mjs`.
