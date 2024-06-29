@@ -10,6 +10,7 @@
     "babel-plugin-transform-rename-import": "^2.3.0"
   },
   "scripts": {
-    "build": "npx babel src --out-dir build --out-file-extension .mjs"
+    "build": "npx babel src --out-dir build --out-file-extension .mjs",
+    "start": "npm run build && node build/index.mjs"
   }
 }

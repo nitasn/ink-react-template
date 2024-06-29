@@ -7,4 +7,4 @@ This repo mainly contains a `babel.config` that transpiles react `.jsx` files in
 ## How to use
 1. Download this repo or fork it.
 2. Run `npm install`.
-3. Run `npm run build && node build/index.mjs`.
+3. Run `npm start`.
